@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CategoryItemTVC" customModule="Practice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.right.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="IEP-3c-sOA">
+                        <rect key="frame" x="2" y="2.5" width="45.5" height="39"/>
+                        <color key="tintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.seal.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="OQW-7F-Nub">
+                        <rect key="frame" x="272.5" y="1.5" width="45.5" height="41.5"/>
+                        <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTq-01-i23">
+                        <rect key="frame" x="53.5" y="2" width="213" height="40"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="tintColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="RTq-01-i23" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="2PM-oA-6JU"/>
+                    <constraint firstItem="IEP-3c-sOA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="49H-C1-t3o"/>
+                    <constraint firstAttribute="bottom" secondItem="RTq-01-i23" secondAttribute="bottom" constant="2" id="9Nh-y7-Gdc"/>
+                    <constraint firstItem="OQW-7F-Nub" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="ATc-Qp-nCf"/>
+                    <constraint firstItem="RTq-01-i23" firstAttribute="leading" secondItem="IEP-3c-sOA" secondAttribute="trailing" constant="6" id="O0d-wf-Rno"/>
+                    <constraint firstAttribute="bottom" secondItem="IEP-3c-sOA" secondAttribute="bottom" constant="2" id="SNM-39-FHL"/>
+                    <constraint firstItem="OQW-7F-Nub" firstAttribute="leading" secondItem="RTq-01-i23" secondAttribute="trailing" constant="6" id="WQO-fm-eTB"/>
+                    <constraint firstItem="IEP-3c-sOA" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="1/7" id="YF8-Kg-Qzc"/>
+                    <constraint firstItem="IEP-3c-sOA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="fBG-4j-hrW"/>
+                    <constraint firstAttribute="bottom" secondItem="OQW-7F-Nub" secondAttribute="bottom" constant="2" id="gPi-zz-qAy"/>
+                    <constraint firstItem="OQW-7F-Nub" firstAttribute="width" secondItem="IEP-3c-sOA" secondAttribute="width" id="mId-df-zKm"/>
+                    <constraint firstAttribute="trailing" secondItem="OQW-7F-Nub" secondAttribute="trailing" constant="2" id="u28-9R-DpD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bulletImage" destination="IEP-3c-sOA" id="ijY-BT-8Ga"/>
+                <outlet property="checkMarkImage" destination="OQW-7F-Nub" id="R78-oc-saY"/>
+                <outlet property="title" destination="RTq-01-i23" id="4oA-NW-VDL"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="127.90178571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow.right.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="checkmark.seal.fill" catalog="system" width="64" height="60"/>
+    </resources>
+</document>
